@@ -187,6 +187,7 @@ var MidiWriter = function(config) {
 
         return {
             b64: btoa(hexMidi),
+            hex: hexMidi,
             play: function() {
                 if (document) {
                     var embed = document.createElement("embed");
