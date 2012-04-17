@@ -4,17 +4,6 @@
 
 var AP = Array.prototype;
 
-// Create a mock console object to void undefined errors if the console object
-// is not defined.
-if (!window.console || !console.firebug) {
-    var names = ["log", "debug", "info", "warn", "error"];
-
-    window.console = {};
-    for (var i = 0; i < names.length; ++i) {
-        window.console[names[i]] = function() {};
-    }
-}
-
 var DEFAULT_VOLUME   = 90;
 var DEFAULT_DURATION = 128;
 var DEFAULT_CHANNEL  = 0;
